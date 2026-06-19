@@ -150,8 +150,16 @@ export default function LandingPage() {
       </section>
 
       <footer className="border-t border-border py-8">
-        <div className="mx-auto max-w-6xl px-6 text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} Public Contact Intelligence Platform. Public data only.</p>
+        <div className="mx-auto max-w-6xl px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
+          <p>© {new Date().getFullYear()} Public Contact Intelligence Platform. Research project. Public data only.</p>
+          <div className="flex items-center gap-5">
+            <Link href="/privacy" className="hover:text-foreground transition-colors">
+              Privacy Policy
+            </Link>
+            <Link href="/terms" className="hover:text-foreground transition-colors">
+              Terms of Service
+            </Link>
+          </div>
         </div>
       </footer>
     </div>
